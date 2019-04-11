@@ -1,0 +1,307 @@
+% LaTeX resume using res.cls
+\documentclass[line,10pt]{res} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor=blue,
+  urlcolor=blue
+}
+\newcommand{\resumetitlemar}{0.5em}
+%\renewcommand{\sectionfont}{\sfdefault}
+\newsectionwidth{1em}
+
+\begin{document}
+
+\name{\huge{\sc \textbf Francis Williams}}%\hspace{4.8em}\normalsize{\sc Computer Science PhD Applicant}}
+\address{francis@fwilliams.info}
+\address{+1-650-701-7891}
+
+\begin{resume}
+
+\vspace{0.2em}
+\section{\Large \sc \textbf Summary}
+\vspace{0.5em}
+I am a PhD student in the \href{https://cims.nyu.edu/gcl/}{Geometric Computing Lab} at NYU. I am interested in problems in machine learning and geometry. In particular, my research aims at designing, developing, and understanding algorithms to process and understand geometric data acquired from scans of the real world. In addition to research, I have a strong background in software engineering and systems programming backed by several years of industry experience.
+\vspace{0.5em}
+
+
+
+
+
+
+\vspace{0.2em}
+\section{\Large \sc \textbf Education}
+\vspace{0.5em}
+
+{\sl \textbf{PhD in Computer Science (In Progress, Year 2)}} - GPA: 3.967/4.00 \\ 
+New York University, New York, NY \\
+Advisors: \href{https://cims.nyu.edu/gcl/daniele.html}{Daniele Panozzo} and \href{https://vgc.poly.edu/~csilva/}{Claudio Silva}
+
+% {\sl Course Highlights} \hfill Grade
+% \begin{itemize} \itemsep -2pt
+% \item CSCI-GA 3033: Geometric Modelling \hfill A 
+% \item DS-GA 3001: Computational Topology and Graph Signal Processing \hfill A
+% \item MATH-GA 2010: Numerical Methods I \hfill A-
+% \item MATH-GA 2020: Numerical Methods II \hfill A
+% \item CS-GY 6643: Computer Vision and Scene Analysis \hfill A
+% \item CS-GY 9223: Deep Learning \hfill A
+% \end{itemize}
+
+{\sl \textbf{Bachelor of Software Engineering - Honors Co-operative program}} - GPA: 81\% (A)\\ 
+University of Waterloo, ON, Canada \\
+Graduated with Distinction \\
+October $1^{st}$ 2015
+
+% {\sl Course Highlights} \hfill Grade
+% \begin{itemize} \itemsep -2pt
+% \item CS 485: Machine Learning: Statistical and Computational Foundations \hfill 90\%
+% \item CS 370: Numerical Computation \hfill 93\%
+% \item CS 341: Algorithms \hfill 82\%
+% \item CS 240: Data Structures and Data Management \hfill 91\%
+% \item SE 350: Operating Systems \hfill 95\%
+% \item CS 343: Concurrent and Parallel Programming \hfill 86\%
+% \item CS 360: Introduction to Theory of Computing \hfill 86\%
+% \end{itemize}
+
+
+
+
+
+\vspace{0.2em}
+\section{\Large \sc \textbf Publications}
+\vspace{0.5em}
+
+{\sl \textbf{\href{https://arxiv.org/abs/1811.10943}{Deep Geometric Prior for Surface Reconstruction}} - CVPR 2019}\\ 
+\textbf{Francis Williams}, Teseo Schneider, Claudio Silva, Denis Zorin, Joan Bruna, Daniele Panozzo
+
+{\sl \textbf{\href{https://arxiv.org/abs/1812.06216}{ABC: A Big CAD Model Dataset For Geometric Deep Learning}} - CVPR 2019}\\ 
+Sebastian Koch, Albert Matveev, Zhongshi Jiang, \textbf{Francis Williams}, Alexey Artemov, Evgeny Burnaev, Marc Alexa, Denis Zorin, Daniele Panozzo
+
+{\sl \textbf{\href{https://arxiv.org/abs/1904.04890}{Unwind: Interactive Fish Straightening}} - Submitted to IEEE VIS 2019}\\
+\textbf{Francis Williams}, Alexander Bock, Harish Doraiswamy, Cassandra Donatelli, Adam Summers, Daniele Panozzo, Claudio Silva
+
+
+
+\vspace{0.2em}
+\section{\Large \sc \textbf Open Source}
+\vspace{0.5em}
+
+{\sl \textbf{NumpyEigen}}\\
+\url{https://github.com/fwilliams/numpyeigen}
+\vspace{\resumetitlemar}
+\begin{itemize} \itemsep -2pt
+\item A library for fast zero-overhead bindings between Numpy and Eigen
+\vspace{-0.4em}
+\begin{itemize} \itemsep -2pt
+\item Makes it easy to transparently convert Numpy dense and Sparse arrays into Eigen types while taking full advantage of expression template optimizations in Eigen
+\item Features near-zero performance overhead and supports function overloading
+\item Used by LibIGL, a major open source project, for Python bindings 
+\end{itemize}
+\end{itemize}
+
+{\sl \textbf{Point Cloud Utils}}\\
+\url{https://github.com/fwilliams/point-cloud-utils}
+\vspace{\resumetitlemar}
+\begin{itemize} \itemsep -2pt
+\item A Python utility library exposing common algorithms on 3D point clouds and meshes
+\vspace{-0.4em}
+\begin{itemize} \itemsep -2pt
+\item Random point sampling of meshes with Poisson Disk Sampling and Lloyd-Relaxation.
+\item Fast pairwise nearest neighbor.
+\item Point set distances including Chamfer, Sinkhorn, and Hausdorff.
+\end{itemize}
+\end{itemize}
+
+{\sl \textbf{FML - Francis' Machine-Learnin' Library}}\\
+\url{https://github.com/fwilliams/fml}
+\vspace{\resumetitlemar}
+\begin{itemize} \itemsep -2pt
+\item A collection of Pytorch utilities for machine learning tasks
+\vspace{-0.4em}
+\begin{itemize} \itemsep -2pt
+\item Includes a numerically stable implementation of the Sinkhorn algorithm to compute optimal transport of point sets in any dimension.
+\item Also includes a vectorized implementation of the Chamfer Distance between point sets in any dimension.
+\end{itemize}
+\end{itemize}
+
+{\sl \textbf{Unwind}}\\
+\url{https://github.com/fwilliams/unwind}
+\vspace{\resumetitlemar}
+\begin{itemize} \itemsep -2pt
+\item A software tool for segmenting and unwarping volumetric CT scans of fishes
+\vspace{-0.4em}
+\begin{itemize} \itemsep -2pt
+\item Currently deployed in 2 Labs (at Tufts and the University of Washington) with plans for expansion
+\item \href{https://arxiv.org/abs/1904.04890}{Paper} in submission to Vis 2019
+\end{itemize}
+\end{itemize}
+
+{\sl \textbf{LibIGL}}\\
+\url{https://github.com/fwilliams/libigl}
+\vspace{\resumetitlemar}
+\begin{itemize} \itemsep -2pt
+\item I actively contribute to LibIGL, an open source geometry processing library
+\vspace{-0.4em}
+\begin{itemize} \itemsep -2pt
+\item Designed, wrote, and maintained new Python bindings (release planned for July)
+\item Implemented techniques for meshing 
+\item Implemented volume rendering in the viewer
+\end{itemize}
+\end{itemize}
+
+% \pagebreak
+
+% {\sl \textbf{OpenCL Raytracer}}\\
+% \url{https://github.com/fwilliams/OpenCL-Raytracer}
+% \vspace{\resumetitlemar}
+% \begin{itemize} \itemsep -2pt
+% \item A toy raytracer built to learn OpenCL:
+% \vspace{-0.4em}
+% \begin{itemize} \itemsep -2pt
+% \item Performs rendering in multiple passes to handle reflection and refraction
+% \item Small scenes render at interactive frame rates on commodity hardware
+% \item Supports triangle meshes, quad meshes, and spheres
+% \item Supports Multi-textured objects using a texture atlas
+% \item Includes OpenGL based interactive viewing using OpenCL/OpenGL inter-op
+% \item Includes custom quad tree based texture atlas packing tool
+% \end{itemize}
+% \end{itemize}
+
+
+% {\sl \textbf{Network Code Machine (NCM)}}\\
+% %University of Waterloo \hfill Jan. - Apr. 2012\null \\ 
+% \url{https://github.com/fwilliams/ncm}
+% \vspace{\resumetitlemar}
+% \begin{itemize} \itemsep -2pt
+% \item \href{https://goo.gl/zArPkn}{NCM} is a small interpreted language for programming TDMA (Time-Division Multiple Access) schedules over a shared Ethernet bus
+% \item Under the supervision of Dr. Sebastian Fischmeister, worked on a research project to compare the relative performance of a software implementation of NCM to an existing FPGA implementation
+% \item Researched and designed Lock-Free interpreter as a Kernel Module running in a real time process in the Linux Kernel with the \href{https://rt.wiki.kernel.org/index.php/Main_Page}{real time patch}
+% \item Designed the interpreter to never block, ensuring real time deadlines were met %(up to the timing guarantees provided by the Linux Kernel real time patch)
+% \item Designed and implemented the interface between Kernel and User space allowing users to put data on the bus, and modify NCM programs
+% \item Wrote extensive test suite to demonstrate high degree of correctness
+% \item Demonstrated prototype of NCM on a laptop connected directly to a micro-controller
+% %\item With no prior experience, learned about Linux Kernel programming by extensively reading documentation and Kernel source code
+% \item Independently learned about Lock-Free and Wait-Free data structures and their effects on shared memory performance by reading academic papers
+% \end{itemize}
+
+% {\sl \textbf{Fourth Year Design Project: \texttt{rivulet.audio}}}\\
+% \url{http://rivulet.audio}
+% \vspace{\resumetitlemar}
+% \begin{itemize} \itemsep -2pt
+% \item A service for searching and streaming music files from torrents, developed as a group project with four members
+% \item Includes a desktop and web client for playing music, finding songs, and managing playlists
+% \item Responsible for the following features:
+% \vspace{-0.4em}
+% \begin{itemize} \itemsep -2pt
+% \item Building an extensible search framework supporting multiple torrent tracker sources
+% \item Matching search meta-data from last.fm to torrent files in trackers
+% \item Radio: automatically selecting a similar song based on what the user is currently listening to
+% \item Handling concurrent streams for multiple users
+% \end{itemize}
+% \item Won 6th place in Waterloo design project competition
+% \end{itemize}
+
+
+
+
+
+\vspace{0.2em}
+\section{\Large \sc \textbf Work Experience}
+\vspace{0.5em}
+
+{\sl \textbf{Software Engineer}} \hfill Jan 2016. - Jan. 2017 \\
+MemSQL \hfill San Francisco, CA\null
+\vspace{\resumetitlemar}
+\begin{itemize} \itemsep -2pt
+\item Developed \href{https://docs.memsql.com/operational-manual/v5.7/role-based-access-control-rbac-deployment-guide/}{Role-Based Access Control} into the MemSQL database engine.
+\item As part of a team of two, designed and implemented \href{https://docs.memsql.com/memsql-pipelines/v6.0/pipelines-overview/}{Pipelines}, a high throughput distributed data ingest and transformation engine. 
+\item Designed and implemented a subprocess management system in the database engine allowing MemSQL to execute external code in a secure manner without leaking resources.
+\item Designed and implemented a general database backup system which allowed users to specify a backup target (e.g. Amazon S3) and automatically write backups and snapshots to this location. 
+\end{itemize}
+
+{\sl \textbf{Research Intern}} \hfill Sept. - Dec. 2014 \\
+HP Labs, Systems Software Group \hfill Palo Alto, CA\null
+\vspace{\resumetitlemar}
+\begin{itemize}  \itemsep -2pt
+\item Under supervision of Dr. Joseph Tucek, researched designed and implemented distributed file system to run on a simulated memristor computer with $\sim$10 TiB of DRAM connected to hundreds of CPUs with the goal of evaluating performance of file workloads in persistent memory computing environment
+\item Independently designed software architecture by reading existing file system papers and source code
+\item Designed and implemented directory system, file descriptor management system, journal, and preliminary file data structures
+\item Delivered functional prototype with demo which compiled source code stored in the file system using \textit{Make}
+\item Mentored junior engineering intern throughout project
+\end{itemize}
+
+\pagebreak
+
+{\sl \textbf{Research Assistant}} \hfill Jan. 2014 - Apr. 2014\null\\
+Oregon State University \hfill Corvallis, OR\null
+\vspace{\resumetitlemar}
+\begin{itemize}  \itemsep -2pt
+\item In collaboration with Dr. Eugene Zhang, researched and developed a correct and efficient algorithm to compute photorealistic lighting in 3D scenes containing multiple interacting mirror surfaces
+\item Formulated theory to model lighting conditions due to mirrors by understanding how mirrors change the topology of the underlying path space of a scene
+\item Generated results demonstrating the quality of our method compared to existing techniques
+\item Designed and developed algorithm as a modification of \href{http://www.povray.org}{\textit{POV-Ray}}, an existing open source ray tracer
+\item Independently learned about many new subjects to conduct research, including group theory, topology, and photorealistic rendering
+\end{itemize}
+
+{\sl \textbf{Graphics Software Engineering Intern}} \hfill May - Aug. 2013 \\
+Amazon (A9.com) \hfill Palo Alto, CA\null
+\vspace{\resumetitlemar}
+\begin{itemize}  \itemsep -2pt
+\item Independently developed cross platform graphics framework for rendering 3D scans of products
+\item The framework supported model and image based rendering techniques with the ability to easily add new rendering modes
+\item The framework could be deployed to Linux, Windows, Android, iOS and any WebGL compatible browser from a single C++ code-base using \href{https://github.com/kripken/emscripten}{\textit{emscripten}}
+\end{itemize}
+
+{\sl \textbf{Augmented Reality Intern}} \hfill Sept. - Dec. 2012 \\
+NVIDIA \hfill Durham, NC\null
+\vspace{\resumetitlemar}
+\begin{itemize} \itemsep -2pt
+\item Designed, improved and debugged real time vision based orientation tracking algorithms
+\item Developed Android multimedia framework to decode and playback synchronized video data into Augmented Reality engine
+\item Developed Unity3D plugin to stream video data to a texture on Android
+\item Built series of Unity3D plug-ins to develop Augmented Reality applications in Unity
+\end{itemize}
+
+% {\sl \textbf{Software Engineering Intern}} \hfill Jan. - Apr. 2012 \\
+% IMVU \hfill Mountain View, CA\null
+% \vspace{\resumetitlemar}
+% \begin{itemize} \itemsep -2pt
+% \item Designed and implemented publish/subscribe system for IMVU photo-stream feature 
+% \item Built system using using PHP and Redis to queue messages
+% %\item Deployed service to over 1 million simultaneous users
+% \item Scaled system to handle over 1 million users from a single machine
+% \end{itemize}
+
+% \pagebreak
+
+% {\sl \textbf{Software Engineering Intern}} \hfill Jan. - Aug. 2011 \\
+% IMVU \hfill Mountain View, CA\null
+% \vspace{\resumetitlemar}
+% \begin{itemize} \itemsep -2pt
+% \item Built user-interface components in IMVU client using Mozilla Gecko
+% \item Created node.js server for multi-player scripting in IMVU client
+% \item Developed Android port of IMVU-to-go mobile application
+% \item Added features to PHP payment framework
+% \end{itemize}
+
+% {\sl \textbf{Software Engineering Intern}} \hfill May - Aug. 2010 \\
+% Pravala \hfill Kitchener, ON\null
+% \vspace{\resumetitlemar}
+% \begin{itemize} \itemsep -2pt
+% \item Developed Android applications to demonstrate features of networking software for transitioning TCP connections between multiple hardware interfaces
+% \item Ported UNIX socket code to Windows socket API
+% \item Automated code testing using Bash and python
+% \end{itemize}
+
+
+
+
+                
+
+\end{resume}
+\end{document}
