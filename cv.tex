@@ -1,6 +1,6 @@
 % LaTeX resume using res.cls
 \documentclass[line,10pt]{res} 
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+% \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage{enumitem}
 \usepackage{hyperref}
@@ -12,12 +12,11 @@
   urlcolor=blue
 }
 \newcommand{\resumetitlemar}{0.5em}
-%\renewcommand{\sectionfont}{\sfdefault}
 \newsectionwidth{1em}
 
 \begin{document}
 
-\name{\huge{\sc \textbf Francis Williams}}%\hspace{4.8em}\normalsize{\sc Computer Science PhD Applicant}}
+\name{\huge{\sc \textbf Francis Williams}}
 \address{francis@fwilliams.info}
 \address{+1-650-701-7891}
 
@@ -33,7 +32,6 @@ I am a PhD student in the \href{https://cims.nyu.edu/gcl/}{Geometric Computing L
 
 
 
-
 \vspace{0.2em}
 \section{\Large \sc \textbf Education}
 \vspace{0.5em}
@@ -42,32 +40,10 @@ I am a PhD student in the \href{https://cims.nyu.edu/gcl/}{Geometric Computing L
 New York University, New York, NY \\
 Advisors: \href{https://cims.nyu.edu/gcl/daniele.html}{Daniele Panozzo} and \href{https://vgc.poly.edu/~csilva/}{Claudio Silva}
 
-% {\sl Course Highlights} \hfill Grade
-% \begin{itemize} \itemsep -2pt
-% \item CSCI-GA 3033: Geometric Modelling \hfill A 
-% \item DS-GA 3001: Computational Topology and Graph Signal Processing \hfill A
-% \item MATH-GA 2010: Numerical Methods I \hfill A-
-% \item MATH-GA 2020: Numerical Methods II \hfill A
-% \item CS-GY 6643: Computer Vision and Scene Analysis \hfill A
-% \item CS-GY 9223: Deep Learning \hfill A
-% \end{itemize}
-
 {\sl \textbf{Bachelor of Software Engineering - Honors Co-operative program}} - GPA: 81\% (A)\\ 
 University of Waterloo, ON, Canada \\
 Graduated with Distinction \\
 October $1^{st}$ 2015
-
-% {\sl Course Highlights} \hfill Grade
-% \begin{itemize} \itemsep -2pt
-% \item CS 485: Machine Learning: Statistical and Computational Foundations \hfill 90\%
-% \item CS 370: Numerical Computation \hfill 93\%
-% \item CS 341: Algorithms \hfill 82\%
-% \item CS 240: Data Structures and Data Management \hfill 91\%
-% \item SE 350: Operating Systems \hfill 95\%
-% \item CS 343: Concurrent and Parallel Programming \hfill 86\%
-% \item CS 360: Introduction to Theory of Computing \hfill 86\%
-% \end{itemize}
-
 
 
 
@@ -84,6 +60,7 @@ Sebastian Koch, Albert Matveev, Zhongshi Jiang, \textbf{Francis Williams}, Alexe
 
 {\sl \textbf{\href{https://arxiv.org/abs/1904.04890}{Unwind: Interactive Fish Straightening}} - Submitted to IEEE VIS 2019}\\
 \textbf{Francis Williams}, Alexander Bock, Harish Doraiswamy, Cassandra Donatelli, Adam Summers, Daniele Panozzo, Claudio Silva
+
 
 
 
@@ -154,58 +131,6 @@ Sebastian Koch, Albert Matveev, Zhongshi Jiang, \textbf{Francis Williams}, Alexe
 \end{itemize}
 \end{itemize}
 
-% \pagebreak
-
-% {\sl \textbf{OpenCL Raytracer}}\\
-% \url{https://github.com/fwilliams/OpenCL-Raytracer}
-% \vspace{\resumetitlemar}
-% \begin{itemize} \itemsep -2pt
-% \item A toy raytracer built to learn OpenCL:
-% \vspace{-0.4em}
-% \begin{itemize} \itemsep -2pt
-% \item Performs rendering in multiple passes to handle reflection and refraction
-% \item Small scenes render at interactive frame rates on commodity hardware
-% \item Supports triangle meshes, quad meshes, and spheres
-% \item Supports Multi-textured objects using a texture atlas
-% \item Includes OpenGL based interactive viewing using OpenCL/OpenGL inter-op
-% \item Includes custom quad tree based texture atlas packing tool
-% \end{itemize}
-% \end{itemize}
-
-
-% {\sl \textbf{Network Code Machine (NCM)}}\\
-% %University of Waterloo \hfill Jan. - Apr. 2012\null \\ 
-% \url{https://github.com/fwilliams/ncm}
-% \vspace{\resumetitlemar}
-% \begin{itemize} \itemsep -2pt
-% \item \href{https://goo.gl/zArPkn}{NCM} is a small interpreted language for programming TDMA (Time-Division Multiple Access) schedules over a shared Ethernet bus
-% \item Under the supervision of Dr. Sebastian Fischmeister, worked on a research project to compare the relative performance of a software implementation of NCM to an existing FPGA implementation
-% \item Researched and designed Lock-Free interpreter as a Kernel Module running in a real time process in the Linux Kernel with the \href{https://rt.wiki.kernel.org/index.php/Main_Page}{real time patch}
-% \item Designed the interpreter to never block, ensuring real time deadlines were met %(up to the timing guarantees provided by the Linux Kernel real time patch)
-% \item Designed and implemented the interface between Kernel and User space allowing users to put data on the bus, and modify NCM programs
-% \item Wrote extensive test suite to demonstrate high degree of correctness
-% \item Demonstrated prototype of NCM on a laptop connected directly to a micro-controller
-% %\item With no prior experience, learned about Linux Kernel programming by extensively reading documentation and Kernel source code
-% \item Independently learned about Lock-Free and Wait-Free data structures and their effects on shared memory performance by reading academic papers
-% \end{itemize}
-
-% {\sl \textbf{Fourth Year Design Project: \texttt{rivulet.audio}}}\\
-% \url{http://rivulet.audio}
-% \vspace{\resumetitlemar}
-% \begin{itemize} \itemsep -2pt
-% \item A service for searching and streaming music files from torrents, developed as a group project with four members
-% \item Includes a desktop and web client for playing music, finding songs, and managing playlists
-% \item Responsible for the following features:
-% \vspace{-0.4em}
-% \begin{itemize} \itemsep -2pt
-% \item Building an extensible search framework supporting multiple torrent tracker sources
-% \item Matching search meta-data from last.fm to torrent files in trackers
-% \item Radio: automatically selecting a similar song based on what the user is currently listening to
-% \item Handling concurrent streams for multiple users
-% \end{itemize}
-% \item Won 6th place in Waterloo design project competition
-% \end{itemize}
-
 
 
 
@@ -267,41 +192,8 @@ NVIDIA \hfill Durham, NC\null
 \item Built series of Unity3D plug-ins to develop Augmented Reality applications in Unity
 \end{itemize}
 
-% {\sl \textbf{Software Engineering Intern}} \hfill Jan. - Apr. 2012 \\
-% IMVU \hfill Mountain View, CA\null
-% \vspace{\resumetitlemar}
-% \begin{itemize} \itemsep -2pt
-% \item Designed and implemented publish/subscribe system for IMVU photo-stream feature 
-% \item Built system using using PHP and Redis to queue messages
-% %\item Deployed service to over 1 million simultaneous users
-% \item Scaled system to handle over 1 million users from a single machine
-% \end{itemize}
-
-% \pagebreak
-
-% {\sl \textbf{Software Engineering Intern}} \hfill Jan. - Aug. 2011 \\
-% IMVU \hfill Mountain View, CA\null
-% \vspace{\resumetitlemar}
-% \begin{itemize} \itemsep -2pt
-% \item Built user-interface components in IMVU client using Mozilla Gecko
-% \item Created node.js server for multi-player scripting in IMVU client
-% \item Developed Android port of IMVU-to-go mobile application
-% \item Added features to PHP payment framework
-% \end{itemize}
-
-% {\sl \textbf{Software Engineering Intern}} \hfill May - Aug. 2010 \\
-% Pravala \hfill Kitchener, ON\null
-% \vspace{\resumetitlemar}
-% \begin{itemize} \itemsep -2pt
-% \item Developed Android applications to demonstrate features of networking software for transitioning TCP connections between multiple hardware interfaces
-% \item Ported UNIX socket code to Windows socket API
-% \item Automated code testing using Bash and python
-% \end{itemize}
 
 
-
-
-                
 
 \end{resume}
 \end{document}
